@@ -1,5 +1,6 @@
 package com.example.todolist.ui
 
+import android.app.Activity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
@@ -59,7 +60,9 @@ class AddTaskActivity: AppCompatActivity() {
                 description = binding.tilDescription.text
             )
             TaskDataSource.insertTask(task)
-            Log.e("TAG", "insertListeners: " + TaskDataSource.getList() )
+
+            setResult(Activity.RESULT_OK)
+            finish()
         }
     }
 }
