@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">To do list</string>
+    <string name="txt_main">Tarefas</string>
+    <string name="txt_date">Data</string>
+    <string name="txt_description">Descrição</string>
+    <string name="txt_time">Hora</string>
+    <string name="txt_cancel">Cancelar</string>
+    <string name="txt_create_task">Criar Tarefa</string>
 </resources>
