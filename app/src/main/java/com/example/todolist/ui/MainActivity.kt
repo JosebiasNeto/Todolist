@@ -30,10 +30,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         adapter.listenerEdit = {
-
+            val intent = Intent(this, AddTaskActivity::class.java)
+            intent.putExtra(AddTaskActivity.TASK_ID, it.id)
+            startActivityForResult(intent, CREATE_NEW_TASK)
         }
         adapter.listenerDelete = {
-
+            TaskDataSource.deleteTask(it)
+            updateList()
         }
     }
 
