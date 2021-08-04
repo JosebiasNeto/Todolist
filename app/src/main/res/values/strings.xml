@@ -8,4 +8,6 @@
     <string name="txt_create_task">Criar Tarefa</string>
     <string name="txt_title">Título</string>
     <string name="txt_new_task">Nova tarefa</string>
+    <string name="txt_edit_menu">Editar</string>
+    <string name="txt_menu_del">Deletar</string>
 </resources>
